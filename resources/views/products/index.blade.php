@@ -4,7 +4,6 @@
 <style>
     .scroll-active{
         height: 15rem;
-
     }
 </style>
 @endpush

@@ -1,5 +1,5 @@
   <!-- button -->
-  <button x-data="topBtn" @click="scrolltoTop" id="topButton"
+  <button onclick="scrollToTop()" id="topButton"
   class="fixed z-10 hidden p-3 bg-gray-100 rounded-full shadow-md bottom-10 right-10 animate-bounce">
   <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg">
@@ -9,14 +9,10 @@
 </button>
 
 <script>
-  document.addEventListener('alpine:init', () => {
-      Alpine.data('topBtn', () => ({
-          scrolltoTop() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-          }
-      }));
-  });
+
+function scrollToTop() {
+    window.scrollTo(0, 0);
+}
 
   const topBtn = document.getElementById("topButton");
   window.onscroll = () => {

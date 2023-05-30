@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,11 @@
     <title>Company Coffee</title>
     <link rel="stylesheet" href="css/app.css">
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <style type="text/css">
+    * {
+        scroll-behavior: smooth;
+    }
+    </style>
 </head>
 <body>
     {{-- Navbar section --}}
