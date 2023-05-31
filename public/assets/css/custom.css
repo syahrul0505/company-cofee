@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Noto Serif Armenian', serif !important;
+}
+
+/* Navbar */
+nav > ul > li > a{
+    color: #ccc;
+    font-weight: 500;
+}
+
+nav > ul > li > a:hover{
+    color: #35251b;
+}
+
+nav > ul > li > a.active{
+    color: #35251b;
+    font-weight: 800;
+}
+
+nav{
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+/* End Navbar */

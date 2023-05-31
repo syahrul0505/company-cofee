@@ -24,6 +24,10 @@ Route::get('/about-us', function () {
     return view('about-us.index');
 })->name('about-us');
 
+Route::get('/our-team', function () {
+    return view('our-team.index');
+})->name('our-team');
+
 Route::get('/contact-us', function () {
     return view('contact-us.index');
 })->name('contact-us');
