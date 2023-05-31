@@ -2,15 +2,16 @@
 
 
 @section('content')
-<div class="container my-14 px-6 mx-auto">
+<section>
+  <div class="relative w-full my-[15px]">
 
     <!-- Section: Design Block -->
     <section class="mb-32 text-gray-800">
   
       <div class="relative overflow-hidden bg-no-repeat bg-cover"
-        style="background-position: 50%; background-image: url({{ asset('assets/images/contact/4.jpg') }}); height: 420px;">
+        style="background-position: 100%; background-image: url({{ asset('assets/images/contact/4.jpg') }}); height: 420px;">
       </div>
-      <div class="container text-gray-800 px-4 md:px-12">
+      <div class="relative mx-12 my-10 text-gray-800 px-4 md:px-12">
         <div class="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6"
           style="margin-top: -100px; background: hsla(0, 0%, 100%, 0.8); backdrop-filter: blur(30px);">
           <div class="flex justify-center">
@@ -74,16 +75,17 @@
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                 " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                 </div>
-                <button type="submit" class="
+                <a class="
+                block
                 w-full
-                px-6
-                py-4
+                py-6
                 bg-blue-600
                 text-white
                 font-medium
                 text-xs
                 leading-tight
                 uppercase
+                text-center
                 rounded
                 shadow-md
                 hover:bg-blue-700 hover:shadow-lg
@@ -91,7 +93,13 @@
                 active:bg-blue-800 active:shadow-lg
                 transition
                 duration-150
-                ease-in-out">Send</button>
+                ease-in-out" href="#ex1" rel="modal:open">Send</a>
+
+                <!-- Modal HTML embedded directly into document -->
+                <div id="ex1" class="modal">
+                  <p>Your Message Already Sent</p>
+                  <p>Thank You</p>
+                </div>
               </form>
             </div>
             <div class="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
@@ -182,4 +190,7 @@
     <!-- Section: Design Block -->
   
   </div>
-  @endsection
+  
+</section>
+
+@endsection
