@@ -3,15 +3,16 @@ const message = document.getElementById('message');
 const inputName = document.getElementById('input-name');
 const inputEmail = document.getElementById('input-email');
 const inputMesage = document.getElementById('input-message');
+const success = document.getElementById('success');
+const failed = document.getElementById('failed');
 
 send.addEventListener('click', (e) => {
     if(inputName.value != '' && inputEmail.value != '' && inputMesage.value != ''){
-        send.setAttribute('href', '#ex1');
-        send.setAttribute('rel', 'modal:open');
+        failed.classList.add('hidden');
+        success.classList.remove('hidden');
         message.reset();
     }else {
-        alert('Form input message tidak boleh ada yang kosong !');
-        send.setAttribute('href', '#');
-        send.setAttribute('rel', '');
+        success.classList.add('hidden');
+        failed.classList.remove('hidden');
     }
 });

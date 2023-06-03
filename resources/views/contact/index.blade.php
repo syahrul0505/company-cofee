@@ -21,6 +21,7 @@
           </div>
           <div class="flex flex-wrap">
             <div class="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
+
               <form id="message">
                 <div class="form-group mb-6">
                   <input type="text" class="form-control block
@@ -75,7 +76,10 @@
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                 " id="input-message" rows="3" placeholder="Message"></textarea>
                 </div>
-                <a id="send" class="
+                <button
+                id="send" 
+                type="button"
+                class="
                 block
                 w-full
                 py-6
@@ -93,14 +97,11 @@
                 active:bg-blue-800 active:shadow-lg
                 transition
                 duration-150
-                ease-in-out">Send</a>
+                ease-in-out"
+                data-modal-target="popup-modal" data-modal-toggle="popup-modal">Send</button>
 
-                <!-- Modal HTML embedded directly into document -->
-                <div id="ex1" class="modal">
-                  <p>Your Message Already Sent</p>
-                  <p>Thank You</p>
-                </div>
               </form>
+
             </div>
             <div class="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
               <div class="flex flex-wrap">
@@ -190,7 +191,45 @@
     <!-- Section: Design Block -->
   
   </div>
-  
+
+
+{{-- modal box ketika berhasil kirim message --}}
+  <div id="popup-modal" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-md max-h-full">
+        <div id="success" class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+            <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="popup-modal">
+                <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                <span class="sr-only">Close modal</span>
+            </button>
+            <div class="p-6 text-center">
+                <img src="{{ asset('assets/images/contact/checklist.png') }}" class="mx-auto mb-4 text-gray-400 w-14 h-14">
+                <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Thank you, your message already sent</h3>
+            </div>
+        </div>
+
+        <div id="failed" class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+          <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-hide="popup-modal">
+              <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              <span class="sr-only">Close modal</span>
+          </button>
+          <div class="p-6 text-center">
+              <svg aria-hidden="true" class="mx-auto mb-4 text-red-400 w-14 h-14 dark:text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400">Please Fill Out All the Forms</h3>
+          </div>
+      </div>
+    </div>
+  </div>
+{{-- end modal box --}}
+
+
+
+{{-- modal box ketika tidak lolos validasi kirim --}}
+<div id="popup-modal-failed" tabindex="-1" class="fixed top-0 left-0 right-0 z-50 hidden p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative w-full max-w-md max-h-full">
+      
+  </div>
+</div>
+{{-- end modal --}}
 </section>
 
 @endsection
