@@ -1054,10 +1054,6 @@ input:checked + .toggle-bg {
   margin-left: -1rem;
   margin-right: -1rem;
 }
-.mx-12 {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1065,6 +1061,10 @@ input:checked + .toggle-bg {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -2156,6 +2156,11 @@ input:checked + .toggle-bg {
 
   .sm\:left-full {
     left: 100%;
+  }
+
+  .sm\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .sm\:-ml-80 {

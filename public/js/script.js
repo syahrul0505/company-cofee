@@ -10,29 +10,53 @@ const modal = document.querySelector('.main-modal');
 const closeButton = document.getElementById('main-close');
 const closeButton2 = document.getElementById('main-close2');
 
+function clearBorder() {
+    inputName.style.borderColor = '';
+    inputEmail.style.borderColor = '';
+    inputMesage.style.borderColor = '';
+    for (let i = 0; i < alertRequired.length; i++) {
+        alertRequired[i].classList.add('hidden');
+    }
+}
+
+function closeModal() {
+    modal.classList.remove('fadeIn');
+	modal.classList.add('fadeOut');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 500);
+}
+
+function transition() {
+    modal.classList.remove('fadeOut');
+    modal.classList.add('fadeIn');
+    modal.style.display = 'flex';
+}
+
+inputName.addEventListener('click', () => {
+    inputName.style.borderColor = '';
+    alertRequired[0].classList.add('hidden');
+});
+inputEmail.addEventListener('click', () => {
+    inputEmail.style.borderColor = '';
+    alertRequired[1].classList.add('hidden');
+});
+inputMesage.addEventListener('click', () => {
+    inputMesage.style.borderColor = '';
+    alertRequired[2].classList.add('hidden');
+});
+
 send.addEventListener('click', (e) => {
     if(inputName.value != '' && inputEmail.value != '' && inputMesage.value != ''){
         failed.classList.add('hidden');
         success.classList.remove('hidden');
-        for (let i = 0; i < alertRequired.length; i++) {
-            alertRequired[i].classList.add('hidden');
-        }
-        inputName.style.borderColor = '';
-        inputEmail.style.borderColor = '';
-        inputMesage.style.borderColor = '';
-        modal.classList.remove('fadeOut');
-		modal.classList.add('fadeIn');
-        modal.style.display = 'flex';
+        clearBorder();
+        transition();
         message.reset();
     }else {
         success.classList.add('hidden');
         failed.classList.remove('hidden');
-        inputName.style.borderColor = '';
-        inputEmail.style.borderColor = '';
-        inputMesage.style.borderColor = '';
-        for (let i = 0; i < alertRequired.length; i++) {
-            alertRequired[i].classList.add('hidden');
-        }
+        clearBorder();
         if(inputName.value == ''){
             inputName.style.borderColor = 'red';
             alertRequired[0].classList.remove('hidden');
@@ -45,24 +69,14 @@ send.addEventListener('click', (e) => {
             inputMesage.style.borderColor = 'red';
             alertRequired[2].classList.remove('hidden');
         }
-        modal.classList.remove('fadeOut');
-		modal.classList.add('fadeIn');
-        modal.style.display = 'flex';
+        transition();
     }
 });
 
 closeButton.addEventListener('click', () => {
-    modal.classList.remove('fadeIn');
-	modal.classList.add('fadeOut');
-    setTimeout(() => {
-        modal.style.display = 'none';
-    }, 500);
+    closeModal();
 });
 
 closeButton2.addEventListener('click', () => {
-    modal.classList.remove('fadeIn');
-	modal.classList.add('fadeOut');
-    setTimeout(() => {
-        modal.style.display = 'none';
-    }, 500);
+    closeModal();
 });
