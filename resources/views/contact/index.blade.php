@@ -6,7 +6,7 @@
   <div class="relative w-full my-[15px]">
 
     <!-- Section: Design Block -->
-    <section class="mb-32 text-gray-800">
+    <section class="mb-14 text-gray-800">
   
       <div class="relative overflow-hidden bg-no-repeat bg-cover"
         style="background-position: 100%; background-image: url({{ asset('assets/images/contact/4.jpg') }}); height: 420px;">
@@ -21,90 +21,9 @@
           </div>
           <div class="flex flex-wrap">
             <div class="grow-0 shrink-0 basis-auto w-full xl:w-5/12 px-3 lg:px-6 mb-12 xl:mb-0">
-
-              <form id="message">
-                <div class="form-group mb-6">
-                  <input type="text" class="form-control block
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="input-name"
-                    placeholder="Name">
-                  <p id="alert-required" class="text-red-700 hidden">This Name field is required</p>
-                </div>
-                <div class="form-group mb-6">
-                  <input type="email" class="form-control block
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="input-email"
-                    placeholder="Email address">
-                  <p id="alert-required" class="text-red-700 hidden">This Email field is required</p>
-                </div>
-                <div class="form-group mb-6">
-                  <textarea required class="
-                  form-control
-                  block
-                  w-full
-                  px-3
-                  py-1.5
-                  text-base
-                  font-normal
-                  text-gray-700
-                  bg-white bg-clip-padding
-                  border border-solid border-gray-300
-                  rounded
-                  transition
-                  ease-in-out
-                  m-0
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-                " id="input-message" rows="3" placeholder="Message"></textarea>
-                <p id="alert-required" class="text-red-700 hidden">This Message field is required</p>
-                </div>
-                <button
-                id="send" 
-                type="button"
-                class="
-                block
-                w-full
-                py-6
-                bg-blue-600
-                text-white
-                font-medium
-                text-xs
-                leading-tight
-                uppercase
-                text-center
-                rounded
-                shadow-md
-                hover:bg-blue-700 hover:shadow-lg
-                focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
-                active:bg-blue-800 active:shadow-lg
-                transition
-                duration-150
-                ease-in-out"
-                data-modal-target="popup-modal" data-modal-toggle="popup-modal">Send</button>
-
-              </form>
-
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12094.57348593182!2d-74.00599512526003!3d40.72586666928451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598f988156a9%3A0xd54629bdf9d61d68!2sBroadway-Lafayette%20St!5e0!3m2!1spl!2spl!4v1624523797308!5m2!1spl!2spl"
+              class="h-56 w-full border-0 rounded-lg shadow-lg" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="grow-0 shrink-0 basis-auto w-full xl:w-7/12">
               <div class="flex flex-wrap">
@@ -191,8 +110,6 @@
       </div>
   
     </section>
-    <!-- Section: Design Block -->
-  
   </div>
 
 
@@ -225,4 +142,79 @@
 {{-- end modal box --}}
 </section>
 
+<!-- component -->
+<section class="text-gray-600 body-font relative">
+ <!-- Container for demo purpose -->
+<div class="container my-12 py-12 mx-auto px-4 md:px-6 lg:px-12">
+    <h3 class="text-3xl font-bold text-center mb-4">Get in touch</h3>
+    <p class="text-center text-gray-500 mb-10 md:mb-12 mx-auto max-w-3xl">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit qui eveniet quibusdam molestias quis dolor nostrum, dolores aut esse explicabo corrupti animi autem odit doloribus.
+    </p>
+    <div class="md:flex md:flex-wrap">
+      <div class="w-full md:pl-3">
+            <form id="message">
+              <div class="form-group mb-6">
+                <input type="text" class="form-control block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="input-name"
+                  placeholder="Name">
+                <p id="alert-required" class="text-red-700 hidden">This Name field is required</p>
+              </div>
+              <div class="form-group mb-6">
+                <input type="email" class="form-control block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="input-email"
+                  placeholder="Email address">
+                <p id="alert-required" class="text-red-700 hidden">This Email field is required</p>
+              </div>
+              <div class="form-group mb-6">
+                <textarea required class="
+                form-control
+                block
+                w-full
+                px-3
+                py-1.5
+                text-base
+                font-normal
+                text-gray-700
+                bg-white bg-clip-padding
+                border border-solid border-gray-300
+                rounded
+                transition
+                ease-in-out
+                m-0
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+              " id="input-message" rows="3" placeholder="Message"></textarea>
+              <p id="alert-required" class="text-red-700 hidden">This Message field is required</p>
+              </div>
+              <button id="send"  type="button" class=" block w-full py-3 bg-blue-600 text-white font-medium text-md leading-tight uppercase text-center rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" data-modal-target="popup-modal" data-modal-toggle="popup-modal">Send</button>
+
+            </form>
+      </div>
+    </div>
+</div>
+<!-- Container for demo purpose -->
+</section>
 @endsection

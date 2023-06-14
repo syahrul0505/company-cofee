@@ -21,6 +21,10 @@ Route::get('/home', function () {
     return view('home.index');
 })->name('home');
 
+Route::get('/about-us', function () {
+    return view('about-us.index');
+})->name('about-us');
+
 Route::get('/contact', function () {
     return view('contact.index');
 })->name('contact');
