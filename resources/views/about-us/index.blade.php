@@ -39,8 +39,8 @@
 </section>
 
 <section class=" mt-[10rem]">
-    <div class="flex justify-center items-center">
-        <h1 class="relative text-3xl pt-[15px] gill_font text-center text-[#07585C] capitalize line_">Our Brand</h1>
+    <div class="flex justify-center items-center my-3">
+        <h1 class="relative text-3xl pt-[15px]gill_font text-center text-[#07585C] capitalize line_">Achievments</h1>
     </div>
     <div class="container my-12 mx-auto px-4 md:px-[12rem]">
         <div class="flex flex-wrap -mx-1 lg:-mx-4">
