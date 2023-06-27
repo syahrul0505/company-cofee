@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
 
 *{
-    font-family: 'Noto Serif Armenian', serif !important;
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'Gilroyff';
+    src: url(../fonts/Gilroy-Light.otf);
+}
+
+.gillff_font {
+    font-family: 'Gilroyff', Arial, Helvetica, sans-serif;
+}
+
+.worksans {
+    font-family: 'Work Sans', sans-serif !important;
 }
 
 /* Navbar */
 nav > ul > li > a{
     color: #ccc;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 nav > ul > li > a:hover{
@@ -25,3 +44,228 @@ nav{
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
 }
 /* End Navbar */
+
+
+.line_:before {
+        content: "";
+        width: 50px;
+        position: absolute;
+        background-color: #98B702;
+        height: 2px;
+        top: 0;
+        left: calc(50% - 25px);
+}
+
+.line_h:before {
+    content: "";
+    width: 70px;
+    position: absolute;
+    background-color: #98B702;
+    height: 5px;
+    top: 12px;
+    left: 0;
+}
+
+/* Slider Hero Image CSS */
+
+.slider_div .owl-item .item {
+    transform: translate3d(0,0,0);
+    transition: all 0.25s ease-in-out;
+    margin: 50px 0;
+}
+
+
+
+.slider_div .owl-item .item-hero img {
+    width: 100%;
+    margin: auto;
+    display: block;
+    transition: .3s;
+}
+
+.slider_div .owl-item .item-hero:hover img {
+    transform: scale(1.1);
+}
+
+.slider_div .owl-item .item img {
+    width: 50%;
+    margin: auto;
+    display: block;
+    transition: .3s;
+    transform: scale(.8);
+}
+
+.slider_div .owl-item.center .item-hero img {
+    object-fit: cover;
+}
+
+.slider_div .owl-item.center .item img {
+    object-fit: cover;
+}
+
+.slider_div .owl-item.active {
+    align-items: center;
+}
+
+.slider_div .owl-nav {
+    text-align: center;
+}
+
+.slider_div .owl-nav button {
+    font-size: 24px !important;
+    margin: 10px;
+}
+
+.btn-detail {
+    font-size: 13px;
+    font-weight: bold;
+    color: #06585C;
+    padding-right: 25px;
+    padding-top: 3px;
+}
+
+/* End Slider Hero Images CSS */
+
+/* Slider Brand */
+.wrapper{
+    width: 1200px;
+    margin: 50px auto;
+}
+
+.carousel .card{
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 380px;
+    height: 360px;
+    text-align: left;
+    border: 1px solid #EEEBE6;
+}
+.carousel .owl-dots{
+    text-align: center;
+    margin-top: 40px;
+}
+.carousel .owl-dot{
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #0072bc!important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+.carousel.owl-dot.active,
+.carousel.owl-dot:hover{
+    background: #0072bc!important;
+}
+
+.features .card_features{
+    margin: 10px 35px;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 320px;
+    height: 350px;
+    text-align: left;
+    border: 1px solid #EEEBE6;
+}
+/* End Slider Brand */
+
+.quote {
+    background-image: url(../images/icon/quote.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.quote:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40%;
+    left: 30%;
+    bottom: 0;
+    background-color: #98B702;
+}
+
+.num_stat {
+    text-align: center;
+    margin: 50px 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Slider On The Air */
+
+.home-demo .item {
+    background: white;
+}
+/* End Slider On The Air */
+
+.bg-hero {
+    background-image: url(../images/home/bg-white2.jpg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.faster {
+    -webkit-animation-duration: 500ms;
+    animation-duration: 500ms;
+}
+
+.animated-content {
+    animation: transitionIn 0.75s;
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
