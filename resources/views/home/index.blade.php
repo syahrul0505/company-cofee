@@ -42,7 +42,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                     <img class="mt-3" src="{{ asset('assets/images/brand/batos.png') }}" alt=""> 
                     <div class="my-5">
                         <h1 class="text-[#06585C] font-semibold">Balap Toast</h1>
-                        <p class="text-slate-500">Sekali minum jrenggg</p>
+                        <p class="text-slate-500">Camilan Gurih Jeger</p>
                         <a class="mt-7 text-[#06585C] font-semibold btn-detail" href="#">See Detail</a>
                     </div>
             </div>
@@ -50,7 +50,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                     <img class="mt-3" src="{{ asset('assets/images/brand/nyaneut.png') }}" alt=""> 
                     <div class="my-5">
                         <h1 class="text-[#06585C] font-semibold">Kopi Nyaneut</h1>
-                        <p class="text-slate-500">Sekali minum jrenggg</p>
+                        <p class="text-slate-500">Juara Tradisionalnya</p>
                         <a class="mt-7 text-[#06585C] font-semibold btn-detail" href="#">See Detail</a>
                     </div>
             </div>
@@ -74,23 +74,24 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
             <div class="item flex flex-col">
                 <img src="{{ asset('assets/images/promotion/pmt1.jpg') }}" class="w-[500px] h-[300px]">
                 <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Segenggam-Cerita Cup</h1>
-                <p class="text-slate-500 font-light font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veritatis repellendus repellat tempore quisquam explicabo voluptates beatae labore deleniti sapiente! Eos temporibus nostrum aperiam iste nesciunt, ab rerum pariatur laboriosam.</p>
+                <p class="text-slate-500 font-light font-serif">Detik hadir menjadi kisah baru, dibingkai dalam kata menjadi cerita.</p>
             </div>
 
             <div class="item flex flex-col">
                 <img src="{{ asset('assets/images/promotion/pmt2.jpg') }}" class="w-[500px] h-[300px]">
-                <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Segenggam-Cerita Cup</h1>
-                <p class="text-slate-500 font-light font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veritatis repellendus repellat tempore quisquam explicabo voluptates beatae labore deleniti sapiente! Eos temporibus nostrum aperiam iste nesciunt, ab rerum pariatur laboriosam.</p>
+                <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Kopi88 X OATSIDE: BANANA OAT SERIES</h1>
+                <p class="text-slate-500 font-light font-serif">Rayakan hari #temansejiwa bersama menu #Oatstanding Kopi88 x OATSIDE. Dua menu terbaru ini sudah tersedia dan dapat di order melalui Aplikasi Kopi88+, pesan antar online atau datang langsung ke outlet terdekat.</p>
             </div>
             <div class="item flex flex-col">
                 <img src="{{ asset('assets/images/promotion/pmt3.jpg') }}" class="w-[500px] h-[300px]">
-                <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Segenggam-Cerita Cup</h1>
-                <p class="text-slate-500 font-light font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veritatis repellendus repellat tempore quisquam explicabo voluptates beatae labore deleniti sapiente! Eos temporibus nostrum aperiam iste nesciunt, ab rerum pariatur laboriosam.</p>
+                <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Kopi88 - Refresher Series</h1>
+                <p class="text-slate-500 font-light font-serif">#KesegaranBaru untuk semua #temansejiwa!
+                    Ada Purple Summer dan Blossom Berry yang siap melepas dahaga ditiap tegukannya.</p>
             </div>
             <div class="item flex flex-col">
                 <img src="{{ asset('assets/images/promotion/pmt4.jpg') }}" class="w-[500px] h-[300px]">
-                <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Segenggam-Cerita Cup</h1>
-                <p class="text-slate-500 font-serif">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae veritatis repellendus repellat tempore quisquam explicabo voluptates beatae labore deleniti sapiente! Eos temporibus nostrum aperiam iste nesciunt, ab rerum pariatur laboriosam.</p>
+                <h1 class="text-[#06585C] font-semibold mt-3 mb-2">Kopi88 Treats</h1>
+                <p class="text-slate-500 font-serif">Kopi88 Treats hadir menjadi pelengkap #temansejiwa dalam menikmati segelas #kopi88. #temansejiwa bisa mendapatkan promo-promo diatas. </p>
             </div>
         </div>
         </div>
@@ -101,7 +102,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
     <div class="container px-6 py-10 mx-auto flex justify-center mt-3 px-6 py-10 mx-auto gap-4">
         <div class="flex flex-col w-[30%]">
                 <img src="{{ asset('assets/images/logo/kopi88.png') }}" class="w-[100px] h-[80px] justify-center items_center">
-            <p class="worksans my-2">Temukan postingan dan info terbaru lewat Instagram Kopi88</p>
+            <p class="worksans mt-4">Temukan postingan dan info terbaru lewat Instagram Kopi88</p>
             <a href="{{ route('partnership') }}" class="flex gap-2 transition ease-in-out  text-[#07585C]text-center justify-center items-center w-[12rem] h-[2rem] worksans py-[25px] bg-white border-2 border-[#07585C] hover:bg-[#07585C] hover:text-white duration-300">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Kopi88</a>
         </div>
@@ -536,7 +537,6 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
             <div class="w-full max-w-6xl mx-auto">
                 <div class="text-center max-w-xl mx-auto">
                     <h1 class="text-6xl md:text-7xl font-bold mb-5 text-gray-600">What people <br>are saying.</h1>
-                    <h3 class="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                     <div class="text-center mb-10">
                         <span class="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
                         <span class="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
@@ -557,7 +557,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                                 </div>
                             </div>
                             <div class="w-full">
-                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                <p class="text-base gillff_font"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Tempatnya sangat instagrammable, cocok untuk berfoto bersama pasangan / keluarga<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                             </div>
                         </div>
                         <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
@@ -570,7 +570,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                                 </div>
                             </div>
                             <div class="w-full">
-                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                <p class="text-base gillff_font"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Suasananya yang cozy dan eye catchy langsung terasa karena baik interior maupun aksesoris ruangan sentuhan modern di dominasi dengan warna pastel. Begitu masuk, aroma kopi yang enak semerbak langsung terhirup. Area makan dilantai dasar bernama Pool Garden, karena disana pengunjung dapat menikmati kopi dengan kursi bantal yang empuk dan lesehan pun bisa.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                             </div>
                         </div>
                     </div>
@@ -585,7 +585,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                                 </div>
                             </div>
                             <div class="w-full">
-                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                <p class="text-base gillff_font"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Banyak variasi menu kopi yang ditawarkan. Mulai dari Es Kopi Susu, Affogato, Flat White, Piccolo, Americano dan masih banyak lagi. Bila kamu ingin yang non coffee, Kopi 88 menyediakan Crème dengan banyak varian rasa seperti matcha, red velvet, taro dan masih banyak lagi varian minuman non coffee.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                             </div>
                         </div>
                         <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
@@ -598,7 +598,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                                 </div>
                             </div>
                             <div class="w-full">
-                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                <p class="text-base gillff_font"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Tempat ini luar biasa! Mereka menawarkan kopi terbaik dan menunjukkan sikap terbaik kepada pelanggannya. Koneksi internet sangat cepat dan tidak terbatas juga. Tempat ini memang cocok untuk belajar dan bersantai. Itu sangat tenang dan ber-AC. Saya hanya ingin terus datang kembali ke tempat ini. Terima kasih!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                             </div>
                         </div>
                     </div>
@@ -613,7 +613,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                                 </div>
                             </div>
                             <div class="w-full">
-                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                <p class="text-base gillff_font"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Kedai kopi yang unik untuk belajar dan membaca buku. Tidak ada suara keras yang akan banyak membantu Anda berkonsentrasi pada apa yang Anda lakukan. Mereka memiliki berbagai makanan dan minuman yang dapat Anda pilih. Jujur saya suka interior yang bagus di semua tempat. Percayalah kepadaku! Anda tidak akan pernah kecewa pasti! Tempat yang tak terlupakan untuk bersantai.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                             </div>
                         </div>
                         <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
@@ -626,7 +626,7 @@ style="background-image: url('{{ asset('assets/images/home/bg-hero.jpg') }}'); b
                                 </div>
                             </div>
                             <div class="w-full">
-                                <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                                <p class="text-base gillff_font"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Ini adalah kombo kedai kopi / bar yang bagus di mana Anda dapat menghabiskan banyak waktu nongkrong tanpa mengetahui ke mana perginya waktu. Saya suka kedai kopi itu sendiri! Tempat yang bagus untuk belajar dan hanya membaca.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
                             </div>
                         </div>
                     </div>
